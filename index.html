@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waitlist Page</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #f9f4e8;
+        height: 100vh;
+      }
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+      a {
+        color: #6e6a6a;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1rem;
+        padding: 0;
+        display: inline-flex;
+      }
+
+      .header a {
+        margin: 10px;
+        padding: 0px;
+      }
+      a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+      a:link {
+        text-decoration: none;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: #f9f4e8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .header {
+        padding: 0px;
+        grid-column: span 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 70px;
+      }
+
+      button {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 1rem;
+      }
+      .list {
+        display: none;
+      }
+      .buttons > .sign-in {
+        background: none;
+        border: none;
+      }
+      .buttons > .join-us,
+      .email > button {
+        background: #4977ea;
+        border: #4977ea;
+        border-radius: 3px;
+        padding: 10px;
+      }
+      .left-side {
+        padding: 10px;
+      }
+      .right-side {
+        text-align: center;
+      }
+      .content {
+        margin: 0px;
+      }
+
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 4rem;
+        margin: 0;
+      }
+      h3 {
+        font-family: "Times New Roman", Times, serif;
+        color: #96948e;
+        font-size: 1rem;
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      input[type="text"] {
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+
+      .footer {
+        width: 100%;
+        grid-column: span 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .footer-right-side > img {
+        width: auto;
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      .right-side img {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer-left-side {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        height: 100%;
+      }
+      .footer-right-side {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        height: 100%;
+      }
+
+      .footer-left-side a {
+        margin-right: 10px;
+        padding: 0px;
+      }
+      .footer-right-side > h4 {
+        font-weight: lighter;
+      }
+
+      @media (max-width: 1250px) {
+        .right-side {
+          display: none;
+        }
+        .container {
+          position: relative;
+          height: 100vh;
+          width: 100%;
+          margin: 0px;
+          padding: 0px;
+          background-color: #f9f4e8;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .header {
+          position: absolute;
+          top: 10px;
+          flex: 1;
+        }
+        .content {
+          position: relative;
+          flex: 1;
+        }
+        .Transfers {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="./images/logo_resized-removebg-preview.png"
+          alt="logo"
+          class="logo"
+        />
+        <img src="./images/list.svg" alt="" class="list" />
+
+        <div class="Transfers">
+          <a href="">Plans</a>
+          <a href="">Find Domain</a>
+          <a href="">Why Hoster</a>
+        </div>
+        <div class="buttons">
+          <button class="sign-in">sign in</button>
+          <button class="join-us">Join Waitlist</button>
+        </div>
+      </div>
+      <div class="content right-side">
+        <img src="./images/img.webp" alt="" />
+      </div>
+      <div class="content left-side">
+        <div class="title">
+          <h1>Host your website in less than 5 minutes</h1>
+        </div>
+        <div class="sub-title">
+          <h3>
+            With Hosterr, get your website up and running in no less than 5
+            minutes with the most competitive pricing packages available online.
+          </h3>
+        </div>
+        <div class="email">
+          <input type="text" placeholder="Enter email address" />
+          <button>Join Whaitlist</button>
+        </div>
+        <div class="small-text">
+          <h3>No spam, ever. Unsubscribe anytime.</h3>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-left-side">
+          <a href="">linkedin</a>
+          <a href="">facebook</a>
+        </div>
+        <div class="footer-right-side">
+          <img src="./images/girl.png" alt="" />
+          <h4>
+            Have any questions? <br />
+            <strong>Talk to a specialist</strong>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
